@@ -1,0 +1,45 @@
+
+.video-detail__container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .video__info{
+        margin-top: 50px;
+        width: 100%;
+        max-width: 550px;
+        display: flex;
+        flex-direction: column;
+        .video__title{
+            font-size: 17px;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+        .video__info__detail{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            &>*{
+                margin-left: 15px;
+            }
+        }
+        .video__description{
+            border-top: 1px solid $white;
+            border-bottom: 1px solid $white;
+            padding: 40px 0px;
+            margin: 40px 0;
+           font-size: 15px;
+            white-space: pre-line;
+            word-break: break-all;
+        }
+        button{
+            background-color: $blue;
+            max-width: 100px;
+            font-size: 12px;
+            padding: 5px 10px;
+        }
+        .video__comments{
+            align-self: flex-end;
+        }
+    }
+}
