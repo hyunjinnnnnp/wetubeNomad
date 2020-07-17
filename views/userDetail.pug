@@ -1,4 +1,16 @@
 extends layouts/main.pug
 
 block content
-    p User Detail
+    .user-profile
+        .user-profile__header
+            .img-container
+                img.u-avatar(src=user.avatarUrl)
+                .avatar__notfound
+                    span avatar not found
+            h4.profile__username=user.name
+        if user.id === loggedUser.id
+            .user-profile__btns
+                a(href=`/users${routes.editProfile}`)
+                    button Edit Profile
+                a(href=`/users${routes.editProfile}`)
+                    button Change Password

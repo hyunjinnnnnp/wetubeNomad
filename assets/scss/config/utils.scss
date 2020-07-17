@@ -1,0 +1,49 @@
+.img-container{
+  position: relative;
+  background-color: rgb(119, 119, 255);
+  padding:10px;
+  .avatar__notfound{
+    position: absolute;
+    top:27px;
+    left: 0;
+    width: 100%;
+
+    padding:10px;
+    background-color: rgba(0, 0, 0, 0.719);
+    span{
+      text-align: center;
+      font-size: 12px;
+      font-weight: 500;
+      color: white;
+      text-shadow: 2px 2px #ff6c6cb7;
+    }
+  }
+  .u-avatar {
+    width: 80px;
+    height: 80px;
+    animation: .5s colorChange forwards;
+    border-radius: 50%;
+    -webkit-box-shadow: 7px 9px 13px -8px rgba(120,120,120,1);
+    -moz-box-shadow: 7px 9px 13px -8px rgba(120,120,120,1);
+    box-shadow: 7px 9px 13px -8px rgba(120,120,120,1);
+  }
+  @keyframes colorChange {
+    0%{
+      background: linear-gradient(0deg, $changeColor, $change 60%, $white);
+    }20%{
+      background: linear-gradient(40deg, $changeColor, $change 60%, $white);
+    }40%{
+      background: linear-gradient(80deg, $changeColor, $change 60%, $white);
+    }50%{
+      background: linear-gradient(120deg, $changeColor, $change 60%, $white);
+    }70%{
+      background: linear-gradient(160deg, $changeColor, $change 60%, $white);
+    }80%{
+      background: linear-gradient(1deg, $changeColor, $change 60%, $white);
+    }90%{
+      background: linear-gradient(360deg, $changeColor, $change 60%, $white);
+    }100%{
+      background: linear-gradient(360deg, $changeColor, $change 10%, $white);
+    }
+  }
+}
